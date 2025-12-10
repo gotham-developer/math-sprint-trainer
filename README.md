@@ -1,16 +1,81 @@
-# React + Vite
+# Math Sprint Trainer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, responsive mental–math practice application built with **React**, **Vite**, and **Bootstrap**.  
+The project focuses on clean structure, professional UI, accurate timing, and a smooth training experience across all devices.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Timed sprints for focused math practice  
+- Multiple chapters including Arithmetic, Algebra, Trigonometry, Percentages, Exponents, and more  
+- Difficulty-based question generation with decimal support  
+- Real‑time streak, accuracy, and scoring logic  
+- Local leaderboard with persistent high scores  
+- Keyboard‑first gameplay on desktops; touch‑friendly on mobile  
+- Professional, minimal, exam‑style UI  
+- Automatic pause with correct‑answer display on mistakes  
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (Vite + JSX)
+- **Bootstrap** for layout and UI structure  
+- **JavaScript (ES Modules)**  
+- **LocalStorage** for high‑score persistence  
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start the development server
+
+```bash
+npm run dev
+```
+
+The app will be available at:
+
+```
+http://localhost:5173/
+```
+
+## Project Structure
+
+```
+src/
+  components/
+    GameConfig.jsx
+    GamePlay.jsx
+    GameSummary.jsx
+    Leaderboard.jsx
+  hooks/
+    useMathSprintEngine.js
+  services/
+    leaderboardService.js
+```
+
+This structure keeps logic, UI components, and services modular, scalable, and maintainable.
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The optimized output will be generated inside the `dist` directory.
+
+## Future Enhancements
+
+- Chapter‑wise analytics  
+- Training history and progress charts  
+- Custom sprint presets  
+- Adaptive difficulty engine  
+- Export/import leaderboard  
+- Voice‑assisted mode for accessibility  
+
+## License
+
+This project is open for personal and educational use.  
+Feel free to modify and adapt it as needed.
